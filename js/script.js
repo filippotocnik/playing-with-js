@@ -4,17 +4,15 @@ window.addEventListener("load", function(){
   console.log(squares)
   
   for (var i = 0; i < squares.length; i++) {
+     squares[i].style.backgroundColor = "red"
      squares[i].addEventListener("click", function(){
-       alert('mu');
+      console.log(this.style.backgroundColor)
       if (this.style.backgroundColor == "red"){
         this.style.backgroundColor = "green"
-        alert('bu');
-      } if (this.style.backgroundColor == "red") {
+      } else if (this.style.backgroundColor == "green") {
         this.style.backgroundColor = "yellow"
-        alert('zu');
-      } if (this.style.backgroundColor == "yellow") {
-        this.style.backgroundColor = "green"
-        alert('fu');
+      } else if (this.style.backgroundColor == "yellow") {
+        this.style.backgroundColor = "red"
       }
     })
   }
