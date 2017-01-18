@@ -1,26 +1,44 @@
-window.addEventListener("load", function(){
-  var squares = document.querySelectorAll(".square")
+$(function () {
 
-  console.log(squares)
-  
-  for (var i = 0; i < squares.length; i++) {
-     squares[i].style.backgroundColor = "red"
-     squares[i].addEventListener("click", function(){
-      console.log(this.style.backgroundColor)
-      if (this.style.backgroundColor == "red"){
-        this.style.backgroundColor = "green"
-      } else if (this.style.backgroundColor == "green") {
-        this.style.backgroundColor = "yellow"
-      } else if (this.style.backgroundColor == "yellow") {
-        this.style.backgroundColor = "red"
-      }
-    })
-  }
-  
+  $(document).on('click','.click', function () {
+    this.remove()
+  })
 
-  
+  $(window).on('resize', function () {
+    console.log($(window).width())
+  })
+
+  $('.square').on('click', function () {
+    console.log($(this).css('background-color'))
+    if ($(this).css('background-color') == 'rgb(255, 0, 0)') {
+      $(this).css('background-color', 'green')
+    }
+  })
+
+  $('#btn').on('click', function (e) {
+    e.preventDefault()
+
+    var firstname = $('input[name=firstname]').val()
+    var lastname = $('input[name=lastname]').val()
+    var age = $('input[name=age]').val()
+
+    $('#neki').append('<p>Moje ime je ' + firstname + ', pisem se ' + lastname + ', star sem ' + age + '.</p>')
+
+
+    console.log('clicked!')
+  })
+
+  var i = 0
+
+  $('#btn2').on('click', function () {
+    console.log('yo')
+    i++
+    $('#new-button').append('<button class="click">'+ i +'</button>')
+
+    
+
+  })
 
 
 
-}, false)
-
+})
