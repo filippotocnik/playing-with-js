@@ -1,0 +1,16 @@
+html, body {
+  margin: 0;
+  padding: 0;
+}
+.wrapper {
+  width: 800px;
+  margin: 0 auto;
+  background-color: #ccc;
+}
+
+.square {
+  width: 100px;
+  height: 100px;
+  background-color: red;
+  margin: 5px;
+} 
