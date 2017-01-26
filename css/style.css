@@ -45,27 +45,30 @@ html, body {
 }
 
 .btn {
-  position: relative;
+  position: absolute;
   top: 50%;
   opacity: 0.7;
-  padding: 0 20px;
+  margin: 0 20px;
+  background: rgba(0, 0, 0, 0.3);
 }
 
 #prev {
-  float: left;
+  left: 0;
 }
 
 #next {
-  float: right;
+  right: 0;
 }
 
 .item {
   height: 300px;
   width: 600px;
+  float: left;
+  
 }
 
 #item1 {
-  background-color: lightslategray;
+  background-color: lightseagreen;
 }
 
 #item2 {
@@ -74,4 +77,15 @@ html, body {
 
 #item3 {
   background-color: lightsalmon;
+}
+
+.norape {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.5);
+  z-index: 3;
+  display: none;
 }

@@ -41,16 +41,40 @@ $(function () {
   
   /* SLIDER */
 
-  $('#prev').on('click', function(){
+  $('#next').on('click', function(){
+   
+    var limit = -1800
+    var currentPosition = parseInt($('.slider').css('left'))
+    console.log(currentPosition)
 
-  
+    var move = currentPosition - 600
+    if (move <= limit) {
+        $('.slider').animate({left: 0+"px"}, 10)
+        
+    } else {
+      $('.slider').animate({left: move+"px"}, 500, function(){
+        
+      })
+    }
+    
 
   })
 
 
-  $('#next').on('click', function(){
+  $('#prev').on('click', function(){
+    
+    var limit = 0
+    var currentPosition = parseInt($('.slider').css('left'))
+    console.log(currentPosition)
 
-  
+    var move = currentPosition + 600
+    console.log(move)
+    if (move > limit) {
+      
+    } else {$('.slider').animate({left: move+"px"}, 500, function(){
+      
+    })}
+    
 
   })
 
