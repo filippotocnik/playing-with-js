@@ -38,7 +38,20 @@ $(function () {
     
 
   })
+  
+  /* SLIDER */
+
+  $('#prev').on('click', function(){
+
+  
+
+  })
 
 
+  $('#next').on('click', function(){
+
+  
+
+  })
 
 })

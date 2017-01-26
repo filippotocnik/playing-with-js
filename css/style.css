@@ -24,4 +24,54 @@ html, body {
 .adding-btn {
   float:right;
   width: 400px;
+  margin-bottom: 100px;
+}
+
+/* SLIDER  */
+
+
+.slider-wrap {
+  position: relative;
+  height: 300px;
+  width: 600px;
+  overflow: hidden;
+  background-color: lightblue;
+}
+
+.slider {
+  position: absolute;
+  height: 300px;
+  width: 1800px;
+}
+
+.btn {
+  position: relative;
+  top: 50%;
+  opacity: 0.7;
+  padding: 0 20px;
+}
+
+#prev {
+  float: left;
+}
+
+#next {
+  float: right;
+}
+
+.item {
+  height: 300px;
+  width: 600px;
+}
+
+#item1 {
+  background-color: lightslategray;
+}
+
+#item2 {
+  background-color: lightgreen;
+}
+
+#item3 {
+  background-color: lightsalmon;
 }
