@@ -1,5 +1,8 @@
 $(function () {
 
+  
+
+
   $(document).on('click','.click', function () {
     this.remove()
   })
@@ -34,50 +37,6 @@ $(function () {
     console.log('yo')
     i++
     $('#new-button').append('<button class="click">'+ i +'</button>')
-
-    
-
-  })
-  
-  /* SLIDER */
-
-  $('#next').on('click', function(){
-   $('.norape').show()
-    var limit = -1800
-    var currentPosition = parseInt($('.slider').css('left'))
-    console.log(currentPosition)
-
-    var move = currentPosition - 600
-    if (move <= limit) {
-         $('.slider').animate({left: 0+"px"}, 10, function(){
-           $('.norape').hide()
-         }) 
-        /*$('#next').hide()*/
-    } else {
-      $('.slider').animate({left: move+"px"}, 500, function(){
-        $('.norape').hide()
-      })
-    }
-    
-
-  })
-
-
-  $('#prev').on('click', function(){
-    $('.norape').show()
-    var limit = 0
-    var currentPosition = parseInt($('.slider').css('left'))
-    console.log(currentPosition)
-
-    var move = currentPosition + 600
-    console.log(move)
-    if (move > limit) {
-      $('.norape').hide()
-    } else {$('.slider').animate({left: move+"px"}, 500, function(){
-      $('.norape').hide()
-    })}
-    
-
   })
 
 })

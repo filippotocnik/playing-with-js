@@ -33,7 +33,7 @@ html, body {
 .slider-wrap {
   position: relative;
   height: 300px;
-  width: 600px;
+  
   overflow: hidden;
   background-color: lightblue;
 }
@@ -41,7 +41,7 @@ html, body {
 .slider {
   position: absolute;
   height: 300px;
-  width: 1800px;
+  /*width: 1800px;*/
 }
 
 .btn {
@@ -77,6 +77,10 @@ html, body {
 
 #item3 {
   background-color: lightsalmon;
+}
+
+#item4 {
+  background-color: lightskyblue;
 }
 
 .norape {
