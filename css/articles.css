@@ -2,3 +2,66 @@ body {
   margin: 0;
   padding: 0;
 }
+
+.wrapper {
+  width: 960px;
+  background: lightgrey;
+  margin: 0 auto;
+}
+
+.sidebar {
+  background-color: olive;
+  width: 200px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  margin: 20px;
+}
+
+.article {
+  width: 100%;
+  margin: 20px 0;
+}
+
+#article1 {
+  background-color: lightblue;
+  height: 600px;
+}
+
+#article2 {
+  background-color: lightgreen;
+  height: 800px;
+}
+
+#article3 {
+  background-color: lightcoral;
+  height: 300px;
+}
+
+#article4 {
+  background-color: lightgoldenrodyellow;
+  height: 900px;
+}
+
+#article5 {
+  background-color: lightsalmon;
+  height: 1200px;
+}
+
+.progress,
+.data {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 50px;
+  margin: 5px 0;
+  box-sizing: border-box;
+}
+
+.data {
+  background: transparent;
+  max-width: 100%
+}
+
+.active {
+  background-color: red
+}
