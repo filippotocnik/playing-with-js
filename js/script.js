@@ -1,24 +1,24 @@
-$(function () {
-
-  
+$(function() {
 
 
-  $(document).on('click','.click', function () {
+
+
+  $(document).on('click', '.click', function() {
     this.remove()
   })
 
-  $(window).on('resize', function () {
+  $(window).on('resize', function() {
     console.log($(window).width())
   })
 
-  $('.square').on('click', function () {
+  $('.square').on('click', function() {
     console.log($(this).css('background-color'))
     if ($(this).css('background-color') == 'rgb(255, 0, 0)') {
       $(this).css('background-color', 'green')
     }
   })
 
-  $('#btn').on('click', function (e) {
+  $('#btn').on('click', function(e) {
     e.preventDefault()
 
     var firstname = $('input[name=firstname]').val()
@@ -33,10 +33,10 @@ $(function () {
 
   var i = 0
 
-  $('#btn2').on('click', function () {
+  $('#btn2').on('click', function() {
     console.log('yo')
     i++
-    $('#new-button').append('<button class="click">'+ i +'</button>')
+    $('#new-button').append('<button class="click">' + i + '</button>')
   })
 
 })
